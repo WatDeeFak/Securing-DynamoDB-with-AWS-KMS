@@ -55,4 +55,11 @@ The project demonstrates how AWS KMS, DynamoDB, and IAM work together to protect
 ✔ Validated encryption controls using an IAM test user
 ✔ Learned how KMS, DynamoDB, and IAM work together to protect data
 
-## Skill Demonstrated
+## Skills Demonstrated
+
+- AWS KMS
+- Amazon DynamoDB
+- IAM User Management
+- Encryption at Rest
+- Access Control Validation
+- Cloud Security Fundamentals
