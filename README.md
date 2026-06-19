@@ -33,18 +33,29 @@ The project demonstrates how AWS KMS, DynamoDB, and IAM work together to protect
 5. Verify access control using an IAM test user.
 
 ## KMS Key
+
+A Customer Managed Key (CMK) was created in AWS KMS to provide encryption for the DynamoDB table.
+This key allows organizations to manage encryption settings and access permissions more securely.
 ![KMS Key](image/KMS-Key.png)
 
 ## DynamoDB Encryption
+
+The DynamoDB table was configured to use the Customer Managed KMS Key for encryption at rest.
+This ensures that all stored data is automatically encrypted and protected by AWS KMS.
 ![DynamoDB Encryption](image/DynamoDB-Encryption.png)
 
 ## DynamoDB Item
 ![DynamoDB Item](image/DynamoDB-Item.png)
 
 ## IAM Test User
+
+A dedicated IAM test-user1 was created to validate access permissions against the encrypted DynamoDB table.
 ![IAM Test User](image/IAM-Test-User.png)
 
 ## Validation
+
+An IAM test user without the required KMS permissions attempted to access the encrypted DynamoDB table.
+The request was denied, confirming that AWS KMS and IAM policies were correctly enforcing access control.
 ![Validation](image/Validation.png)
 
 ## Lesson Learned
