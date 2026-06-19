@@ -1,10 +1,14 @@
-# Securing-DynamoDB-with-AWS-KMS
-Securing DynamoDB with AWS KMS
-
 # Encrypting DynamoDB with AWS KMS
 
 ## Overview
+This project demonstrates how to secure data stored in Amazon DynamoDB using AWS Key Management Service (AWS KMS).
+A Customer Managed Key (CMK) was created and attached to a DynamoDB table to provide encryption at rest.
+IAM permissions were then tested using a dedicated IAM user to validate access control and data protection.
+The project demonstrates how AWS KMS, DynamoDB, and IAM work together to protect sensitive data.
+
 ## Architecture Diagram
+
+![Architecture Diagram](image/Diagram.png)
 
 ## Service Used
 
@@ -13,21 +17,32 @@ Securing DynamoDB with AWS KMS
 - IAM ( Identity Access Management )
 
 ## Objectives
+
+- Create a Customer Managed KMS Key
+- Encrypt a DynamoDB table using AWS KMS
+- Store and retrieve data securely
+- Test IAM user access permissions
+- Validate encryption and access controls
+
 ## Implementation Steps
 
 1. Create encryption keys with AWS KMS
 2. Encrypt a DynamoDB database with a KMS key.
 3. Add and retrieve data from database to test our encryption.
 4. Create IAM user and test accessing the data.
-5. Observe how AWS stops unauthorized access to our data.
+5. Verify access control using an IAM test user.
 
 ## KMS Key
+![KMS Key](image/KMS Key.png)
 
 ## DynamoDB Encryption
+![DynamoDB Encryption]
 
 ## DynamoDB Item
-
+![DynamoDB Item](image/DynamoDBitem.png)
 ## IAM Test User
+
+![IAM Test User](image/IAMTestUser.png)
 
 ## Validation
 
