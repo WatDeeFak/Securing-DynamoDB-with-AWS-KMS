@@ -33,18 +33,19 @@ The project demonstrates how AWS KMS, DynamoDB, and IAM work together to protect
 5. Verify access control using an IAM test user.
 
 ## KMS Key
-![KMS Key](image/KMS Key.png)
+![KMS Key](image/KMS-Key.png)
 
 ## DynamoDB Encryption
-![DynamoDB Encryption]
+![DynamoDB Encryption](image/DynamoDB-Encryption.png)
 
 ## DynamoDB Item
-![DynamoDB Item](image/DynamoDBitem.png)
-## IAM Test User
+![DynamoDB Item](image/DynamoDB-Item.png)
 
-![IAM Test User](image/IAMTestUser.png)
+## IAM Test User
+![IAM Test User](image/IAM-Test-User.png)
 
 ## Validation
+![Validation](image/Validation.png)
 
 ## Lesson Learned
 
